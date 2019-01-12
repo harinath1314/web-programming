@@ -1,0 +1,96 @@
+.title{
+
+    background-image: url("Images/journey.jpg");
+    background-size: cover;
+}
+.cspp{
+    font-size: x-large;
+    font-weight: bold;
+    color: darkgoldenrod;
+    text-shadow: 2px 2px black;
+    background-image: url("Images/cspp.jpg");
+    background-size: cover;
+
+}
+.dbms{
+    font-size: x-large;
+    font-weight: bold;
+    color: darkgoldenrod;
+    text-shadow: 2px 2px black;
+    background-image: url("Images/dbms.png");
+    background-size: cover;
+
+}
+.cs{
+    font-size: x-large;
+    font-weight: bold;
+    color: darkgoldenrod;
+    text-shadow: 2px 2px black;
+    background-image: url("Images/Cybersecurity.png");
+    background-size: cover;
+
+}
+.cnf{
+    font-size: x-large;
+    font-weight: bold;
+    color: darkgoldenrod;
+    text-shadow: 2px 2px black;
+    background-size: cover;
+
+    background-image: url("Images/cnf.jpg");
+}
+.ads{
+    font-size: x-large;
+    font-weight: bold;
+    color: darkgoldenrod;
+    text-shadow: 2px 2px black;
+    background-image: url("Images/dsa.png");
+    background-size: cover;
+
+}
+.ics{
+    font-size: x-large;
+    font-weight: bold;
+    color: darkgoldenrod;
+    text-shadow: 2px 2px black;
+
+    text-align: end;
+    background-image: url("Images/ICS.jpg");
+    background-size: cover;
+
+}
+.lists{
+    padding: 0% ;
+    border-radius: 2%;
+    border-color: darkgreen;
+    border-style: double;
+    background-color: lightpink;
+    text-align:left; 
+    list-style-type:disc;
+    font-family:cursive;
+}
+.interest{
+    text-align: left;
+    font-family: cursive;
+    color: darkgoldenrod;
+    background-image: url(Images/interest.jpg);
+}
+.profile{
+background-image:url(Images/pat.png);
+background-size: cover;
+}
+.body{
+    background-image: url(Images/patpat.jpg);
+}
+.border{
+    border-radius: 2%;
+    border-color: darkgreen;
+    border-style: double;
+}
+.maintext{
+font-family: fantasy;
+font-size: 75px;
+}
+.mainprofile{
+    background-image: url(Images/interest.jpg);
+}
