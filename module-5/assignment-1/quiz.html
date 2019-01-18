@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+	this is html for module 5 assignment -1
+	author harinatha
+	credits:- to all classmates for their ideas.
+ -->
+
+<head>
+	<title>MSIT QUIZ</title>
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU'
+	 crossorigin='anonymous'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+</head>
+<!-- this is for checking the answers for the questions. -->
+<script>function checkanswer(option) {
+		var opt1 = document.getElementById("question1t");
+		var opt1f = document.getElementById("question1f");
+		var opt2 = document.getElementById("question2t");
+		var opt2f = document.getElementById("question2f");
+
+		if (option === "true1") {
+			opt1.style.display = "block";
+			opt1f.style.display = "none";
+
+		} else if (option === "false1") {
+			opt1f.style.display = "block";
+			opt1.style.display = "none";
+		}
+		else if (option === "true2") {
+			opt2.style.display = "block";
+			opt2f.style.display = "none";
+
+		}
+		else if (option === "false2") {
+			opt2f.style.display = "block";
+			opt2.style.display = "none";
+		}
+	}
+	// this is to open the hint button.
+	function hint() {
+		var hin = document.getElementById("hint");
+		hin.style.display = "block";
+	}
+	function hint2() {
+		var hin = document.getElementById("hint2");
+		hin.style.display = "block";
+	}
+</script>
+
+<body style="background-image:url(background.jpg); background-size:cover;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8 background" style="margin-top: 1%; border: 4px solid blue">
+				<h1 style="color:white; font-family: cursive;">
+					Learning by doing
+				</h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-8 background11" style="margin-top: 0%; border: 4px solid blue">
+
+				<!-- <p id="one"></p> -->
+
+				<p class="row question" style="margin-bottom: 0%; color: white;"> 1.Hyderabad is the best place to live </p>
+				<div class="row" style="margin-bottom: 5%">
+					<button class="col-md-1" style="background-color:darkgoldenrod;" onclick="hint()">hint
+					</button>
+				</div>
+				<div class="alert alert-warning fade in alert-dismissible " id="hint" style="display:none;">
+					<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
+					Hyderabad is famous for many reasons in india. <span class="glyphicon glyphicon-chevron-right" style="float:right"></span>
+				</div>
+				<div class="radio" style="color:azure;">
+					<label><input type="radio" name="optradio1" value="true1" onclick="checkanswer(value)" style="color:azure"> True</label>
+				</div>
+				<div class="radio" style="color:azure;">
+					<label><input type="radio" name="optradio1" value="false1" onclick="checkanswer(value)" style="color:azure"> False</label>
+				</div>
+				<div class="alert alert-danger fade in alert-dismissible" id="question1t" style="display:none; margin-top:18px;">
+					<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
+					<span class="glyphicon glyphicon-ok" style="color:green;"></span>
+					correct. many love hyderabad because it provides many oppurtunities.
+				</div>
+				<div class="alert alert-danger fade in alert-dismissible" id="question1f" style="display:none">
+					<a href="#" class="close" data-dismiss="alert" aria-label="close" title="close">×</a>
+					<span class="glyphicon glyphicon-remove" style="color:red;"></span>
+					<div>Incorrect. many love hyderabad because it provides many oppurtunities.</div>
+				</div>
+				<div class="row">
+					<div class="col-md-5">
+
+					</div>
+					<ul class="pagination ">
+						<li><a href="myhomepage.html">1</a></li>
+						<li><a href="hari">2</a></li>
+						<li><a href="myhomepage.html">3</a></li>
+					</ul>
+				</div>
+
+
+			</div>
+			<!-- <script type="text/javascript" src="quiz.js"></script> -->
+
+			<div class="col-md-2">
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
