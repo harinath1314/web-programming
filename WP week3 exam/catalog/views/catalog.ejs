@@ -1,0 +1,38 @@
+<html>
+
+
+<head>
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="assets/catalog.js"></script>
+    <script src="/controllers/catalogcontrollers.js"></script>
+
+</head>
+
+<body>
+    <h1><u>catalog</u></h1>
+    <ul>
+        <li></li>
+    </ul>
+
+    <div id="catalog">
+        <ol>
+            <u>
+                <% for(var i=0;i<catalog.length;i++){ %>
+                <li>
+                    <%=catalog[i].title%> </li>
+                    <img src="/assets/<%=catalog[i].image%> "alt="">
+                    <p>
+                        <strong>description : </strong> <%=catalog[i].description%>
+                    </p>
+                    <p>
+                        <strong>price : </strong> <%=catalog[i].price%>
+                    </p>
+                    <p><button id="button" >delete </button> <button>edit</button></p>
+                <%}%>
+                <br>
+            </u>
+        </ol>
+    </div>
+</body>
+
+</html>
