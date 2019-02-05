@@ -1,0 +1,56 @@
+<html>
+
+
+<head>
+        <!-- <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" -->
+        <!-- crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/catalog.js"></script>
+    <script src="/controllers/catalogcontrollers.js"></script>
+    
+
+</head>
+
+<body>
+    <h1><u>catalog</u></h1>
+    <ul>
+        <li></li>
+    </ul>
+
+    <div id="catalog">
+        <ol>
+            <u>
+                <% for(var i=0;i<catalog.length;i++){ %>
+                <li>
+                    <%=catalog[i].title%> </li>
+                    <img src="/assets/<%=catalog[i].image%> "alt="">
+                    <p>
+                        <strong>description : </strong> <%=catalog[i].description%>
+                    </p>
+                    <p>
+                        <strong>price : </strong> <%=catalog[i].price%>
+                    </p>
+                    <button id="button" value="<%=i%>" onclick =del(value) name="click"> delete</button> <button  value="<%=i%>" onclick="edit(value) " >edit</button>
+                    <form id="model+<%=i%>" style="display:none">
+                        <label for="mobile-name"> mobile-name
+                            <input type="text" id="mobile<%=i%>" name="mobile-name" >
+                        </label>
+                        <br>
+                        <label for="mobile-name">mobile-desc
+                            <input type="text" id="desc<%=i%>" name="mobile-desc" >
+                        </label>
+                        <br>
+                        <label for="mobile-name">mobile-price
+                            <input type="text" id="price<%=i%>" name="mobile-price" >
+                        </label>
+                        <button type="">submit</button>
+                    </form>
+                <%}%>
+                <br>
+            </u>
+        </ol>
+    </div>
+</body>
+
+</html>
